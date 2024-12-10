@@ -53,7 +53,7 @@ func main() {
 	}
 
 	// Зчитування токена з .env
-	botToken := os.Getenv("7723878833:AAEsP2zbDPhNcipsotH34jo4To69VfEPsYk")
+	botToken := os.Getenv("TELEGRAM_TOKEN")
 	log.Printf("Токен з .env або змінної середовища: '%s'", botToken)
 	if botToken == "" {
 		log.Fatal("Токен Telegram не знайдено у файлі .env або змінних середовища. Перевірте правильність назви змінної.")
